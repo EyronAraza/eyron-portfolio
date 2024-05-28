@@ -9,6 +9,13 @@
     height: auto;
     // border: 1px solid blue;
 
+    #profile-pic {
+        margin-top: 10px;
+        width: 200px;
+        height: auto;
+        filter: drop-shadow(0 0 10px $primary-purple);
+    }
+
     h1 {
         font-size: 3rem;
         text-align: center;

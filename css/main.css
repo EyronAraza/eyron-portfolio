@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #9575DE black; }
+
+body {
+  background-color: #221F26; }
+
+/* MAIN CONTAINER */
+main {
+  width: 100%;
+  height: auto; }
+
+/* For Tablet screens (over 480px and under 800px) */
+/* For Phone screens (under 480px) */
+
+/*# sourceMappingURL=main.css.map */

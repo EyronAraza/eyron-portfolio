@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+
+    // Main font 
+    font-family: $main-font;
+    color: $main-txt-color;
+
+    // Scrollbar customisation
+    scrollbar-width: thin;
+    scrollbar-color: $primary-purple black;
+}
+
+body {
+    // Main background color
+    background-color: $main-bg-color;
+}
+
+/* MAIN CONTAINER */
+main {
+    width: 100%;
+    height: auto;
+    // border: 1px solid red;
+}
+
+/* For Tablet screens (over 480px and under 800px) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    // body {
+    //     background-color: aquamarine;
+    // }
+}
+
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+    // body {
+    //     background-color: bisque;
+    // }
+}

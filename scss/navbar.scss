@@ -1,0 +1,88 @@
+@import 'main';
+@import 'variables';
+
+/* NAVBAR */
+#nav-bar {
+    width: 100%;
+    height: 15vh;
+    // background-color: aquamarine;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    gap: 5rem;
+    // margin-top: 20px;
+
+    // Style radio buttons container
+    #radio-container {
+        display: none;
+    }
+
+    // Navigation Buttons
+    .nav-button {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(#fff, 0);
+        color: white;
+        font-size: 1.4rem;
+        width: 130px;
+        border: 2px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        // Hover button effect
+        &:hover {
+            background-color: $primary-purple;
+            color: $purple-dark;
+            border: 2px solid $primary-purple;
+        }
+
+        // Active button
+        &.active {
+            background-color: $primary-purple;
+            color: $purple-dark;
+            border: 2px solid $primary-purple;
+        }
+
+        // Hover effect
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: -100%;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: $primary-purple;
+        //     z-index: -1;
+        //     transition: 0.5s;
+        //     transform: scaleX(0);
+        // }
+
+        // &:hover::before {
+        //     transform: scaleX(1);
+        //     left: 0;
+        // }
+    }
+}
+
+/* For Tablet screens (over 480px and under 800px) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    #nav-bar {
+        height: 13vh;
+    }
+}
+
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+    #nav-bar {
+        height: 13vh;
+        gap: 1.75rem;
+
+        .nav-button {
+            font-size: 1.3rem;
+            width: 110px;
+        }
+    }
+}

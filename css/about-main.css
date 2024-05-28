@@ -1,0 +1,58 @@
+/* ABOUT ME PAGE */
+#about-me-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto; }
+  #about-me-page h1 {
+    font-size: 3rem;
+    text-align: center; }
+  #about-me-page h2 {
+    margin-top: 25px;
+    font-size: 1.6rem; }
+  #about-me-page p {
+    font-size: 1.2rem;
+    text-align: center; }
+  #about-me-page #about-text-container {
+    margin-top: 20px;
+    width: 75%; }
+  #about-me-page #h1-myname {
+    color: #9575DE; }
+  #about-me-page #skills-container {
+    margin-top: 1rem;
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    #about-me-page #skills-container .skills-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: auto;
+      padding: 15px 0;
+      background-color: #2B2730;
+      border-radius: 10px; }
+    #about-me-page #skills-container img {
+      width: auto;
+      height: 75%; }
+    #about-me-page #skills-container p {
+      margin-top: 15px;
+      font-weight: bold; }
+
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+  #about-me-page #about-text-container {
+    width: 90%; }
+  #about-me-page #skills-container {
+    gap: 1rem; }
+    #about-me-page #skills-container .skills-box {
+      width: 160px;
+      height: auto; } }
+
+/*# sourceMappingURL=about-main.css.map */

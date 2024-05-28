@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyron Araza | Web Portfolio</title>
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/png" href="img/tab-icon.png">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/about-main.css">
+    <link rel="stylesheet" href="css/projects-main.css">
+    <link rel="stylesheet" href="css/contact-main.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- Link to JavaScript -->
+    <script defer src="js/main.js"></script>
+    <script defer src="js/flickity.pkgd.min.js"></script>
+</head>
+<!-- 
+    REFERENCES PURPOSES
+    Comment over code: ctrl + / OR shift + alt + A
+    Tag over text: ctrl + shift + P then 'Emment'
+    Create tags efficiently: 'tagname.className' or 'tagname#idName'
+    Move code line: 'alt + up' or 'alt + down'
+    If want to position absolute of child inside parent container, parent's position should be 'relative'
+-->
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav id="nav-bar">
+        <button class="nav-button active" type="button">About</button>
+        <button class="nav-button" type="button">Projects</button>
+        <button class="nav-button" type="button">Contact</button>
+
+        <!-- RADIO BUTTONS FOR NAV BUTTONS -->
+        <div id="radio-container">
+            <input type="radio" name="radio-navbuttons" id="radio-1">
+            <input type="radio" name="radio-navbuttons" id="radio-2">
+            <input type="radio" name="radio-navbuttons" id="radio-3">
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main>
+        <!-- ABOUT PAGE -->
+        <div id="about-me-page">
+            <h1>HELLO!</h1>
+            <h1>My name is <span id="h1-myname">Eyron Araza</span></h1>
+            <div id="about-text-container">
+                <p>I am an aspiring <b>web developer</b>, <b>game developer</b> and <b>UI/UX Designer</b> dedicated to
+                    honing my skills and expanding my
+                    knowledge. Currently, I specialize in front-end development, where I focus on creating engaging and
+                    intuitive user
+                    experiences. My journey in coding and design is driven by a commitment to continuous learning and
+                    improvement.</p>
+            </div>
+
+            <h2>SKILLS</h2>
+            <div id="skills-container">
+                <div class="skills-box">
+                    <img class="skills-img" src="img/html-logo.png">
+                    <p>HTML</p>
+                </div>
+                <div class="skills-box">
+                    <img class="skills-img" src="img/css-logo.png">
+                    <p>CSS</p>
+                </div>
+                <div class="skills-box">
+                    <img class="skills-img" src="img/js-logo.png">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="skills-box">
+                    <img class="skills-img" src="img/sass-logo.png">
+                    <p>SASS</p>
+                </div>
+                <div class="skills-box">
+                    <img class="skills-img" src="img/figma-logo.png">
+                    <p>FIGMA</p>
+                </div>
+                <div class="skills-box">
+                    <img class="skills-img" src="img/unity-logo.png">
+                    <p>UNITY</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS PAGE -->
+        <div id="projects-page">
+            <!-- background dim (opened through certain links) -->
+            <div id="bg-dim">
+                <!-- Exit Button -->
+                <i class="fa-solid fa-xmark" id="btn-close"></i>
+
+                <!-- My assets gallery -->
+                <div id="assets-gallery-container">
+                    <!-- SECTION C: SHOWCASE GALLERY -->
+                    <div id="assets-gallery" class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset1.png" class="gallery-img">
+                        </div>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset2.png" class="gallery-img">
+
+                        </div>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset3.png" class="gallery-img">
+                        </div>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset4.png" class="gallery-img">
+                        </div>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset5.png" class="gallery-img">
+                        </div>
+                        <div class="gallery-cell">
+                            <!-- IMAGE SCREENSHOT -->
+                            <img src="img/gallery/asset6.png" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 1 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/touhou-project-site.png">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>Touhou Project Website</h1>
+                    <hr>
+                    <p>I created an informative website about the game series Touhou Project. It primarily
+                        focuses on the front-end using
+                        SASS language.</p><br>
+
+                    <!-- Links -->
+                    <a href="https://eyronaraza.github.io/touhouproject.github.io/" target="_blank"><i
+                            class="fa-solid fa-globe"></i> Live Project</a><br>
+                    <a href="https://github.com/EyronAraza/touhouproject.github.io" target="_blank"><i
+                            class="fa-brands fa-github"></i> Source Code</a><br>
+                    <a href="https://youtu.be/l5HLWW1d6rk" target="_blank"><i class="fa-brands fa-youtube"></i>
+                        Walkthrough Video</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/hoddle-site.png">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>HODDLE Studios Website</h1>
+                    <hr>
+                    <p>A website I made for my group project. HODDLE Studios is an indie game company we came up to
+                        spread awarness about
+                        environmental and sustainability issues through the power of gaming and storytelling.</p>
+                    <br>
+
+                    <!-- Links -->
+                    <a href="https://hoddlestudios.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Live
+                        Project</a><br>
+                    <a href="https://github.com/EyronAraza/hoddle-studios-site" target="_blank"><i
+                            class="fa-brands fa-github"></i>
+                        Source Code</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/touhou-slideshow-site.png">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>Touhou Character Slideshow Website</h1>
+                    <hr>
+                    <p>A mini website project about a slideshow of characters from the game Touhou Project. You can
+                        click on the arrows or
+                        character icons to navigate. Tap on the character for more info about the character.</p>
+                    <br>
+
+                    <!-- Links -->
+                    <a href="https://eyronaraza.github.io/touhou-characters-slideshow/" target="_blank"><i
+                            class="fa-solid fa-globe"></i> Live
+                        Project</a><br>
+                    <a href="https://github.com/EyronAraza/touhou-characters-slideshow" target="_blank"><i
+                            class="fa-brands fa-github"></i>
+                        Source Code</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/mythscape-game.png">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>MythScape | A 2D turn-based RPG Game</h1>
+                    <hr>
+                    <p>A 2D turn-based RPG undetale-inspired game. Created with Unity game engine. It is a fully-fledged
+                        game project that includes a story, world, and unique RPG battle system.</p>
+                    <br>
+
+                    <!-- Links -->
+                    <a href="https://eyron.itch.io/mythscape" target="_blank"><i class="fa-brands fa-itch-io"></i>
+                        Download on Itch.io</a><br>
+                    <a href="https://youtu.be/6_GKy_C-TOQ" target="_blank"><i class="fa-brands fa-youtube"></i>
+                        Walkthrough Video</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/commuhelp-game.png">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>CommuHelp | Multiplayer Cooperative Game</h1>
+                    <hr>
+                    <p>CommuHelp is a multiplayer cooperative game where players work together to save the local town
+                        from environmental and
+                        social issues. This was a group project where I was responsible for game designing and creating
+                        2D and 3D game assets.</p>
+                    <br>
+
+                    <!-- Links -->
+                    <a href="https://hoddle-studios.itch.io/commu-help" target="_blank"><i
+                            class="fa-brands fa-itch-io"></i>
+                        Download on Itch.io</a><br>
+                </div>
+            </div>
+
+            <!-- PROJECT 6 -->
+            <div class="project-box">
+                <!-- Project thumbnail image -->
+                <div class="project-thumbnail">
+                    <img class="thumbnail-img" src="img/project-thumbnails/boncafe-app.jpg">
+                </div>
+
+                <!-- Project Details -->
+                <div class="project-info">
+                    <h1>BONCAFE Service & Maintenance App</h1>
+                    <hr>
+                    <p>BONCAFE Service & Maintenance is an app for notifying both the client
+                        and provider in regard to coffee machines,
+                        reports and contracts. This is a group project where we created an app for the company BONCAFE
+                        based in Dubai. I was responsible for the front-end development and UI/UX design.</p>
+                    <br>
+
+                    <!-- Links -->
+                    <a href="https://www.youtube.com/watch?v=XOb8gmurIpQ" target="_blank"><i
+                            class="fa-brands fa-youtube"></i>
+                        Walkthrough Video</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="contact-page">
+            <!-- CONTACT FORM -->
+            <!-- Form box -->
+            <div id="form-box">
+                <h1>Contact</h1>
+                <p>If you have any inquiries or are interested in working together, please provide your information
+                    below
+                    to get in touch with
+                    me.</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms built-in contact form -->
+                    <input type="hidden" name="access_key" value="92ec5f0d-13c5-4a40-81c0-58fcca3603f4">
+
+                    <!-- NAME LABEL -->
+                    <label for="name-box">Name:</label>
+                    <input type="text" id="name-box" name="name" placeholder="Enter your name" required>
+
+                    <!-- EMAIL LABEL -->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <!-- TEXT AREA LABEL  -->
+                    <label for="message">Message</label>
+                    <textarea id="subject" name="message" placeholder="Enter your message" style="height:200px"
+                        required></textarea>
+
+                    <!-- SUBMIT BUTTON -->
+                    <div style="display: flex; justify-content: center;">
+                        <button id="btn-submit" type="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Social box -->
+            <div id="social-box">
+                <h1>My Socials</h1>
+                <!-- Social buttons -->
+                <div id="social-button-box">
+                    <a href="https://www.linkedin.com/in/eyron-araza-011577307" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/EyronAraza" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

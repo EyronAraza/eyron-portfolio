@@ -1,0 +1,227 @@
+@import 'variables';
+
+/* PROJECTS PAGE */
+#projects-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    // border: 2px solid blue;
+    gap: 3rem;
+    margin-bottom: 50px;
+
+    // styling all project boxes
+    .project-box {
+        display: flex;
+        width: 95%;
+        height: auto;
+        // background-color: antiquewhite;
+
+        // project thumbnail container
+        .project-thumbnail {
+            width: 42vw;
+            height: 22vw;
+            // max-height: 350px;
+            border: 5px solid $primary-purple;
+            border-radius: 10px;
+            overflow: hidden;
+            // flex: 2.2;
+
+            // thumbnail image
+            .thumbnail-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        // project info
+        .project-info {
+            margin-left: 20px;
+            flex: 3;
+
+            h1 {
+                font-size: 2rem;
+                line-height: 40px;
+            }
+
+            hr {
+                margin: 5px 0;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            a,
+            i {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: $primary-purple;
+                text-decoration: none;
+                margin-right: 3px;
+
+                &:hover {
+                    color: lighten($primary-purple, 10%);
+
+                    i {
+                        color: lighten($primary-purple, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+    // background dim
+    #bg-dim {
+        display: none;
+        position: fixed;
+        background-color: rgba(black, 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        // Exit button
+        #btn-close {
+            position: absolute;
+            z-index: 2;
+            top: 20px;
+            right: 30px;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        // My AssetsGallery container
+        #assets-gallery-container {
+            position: absolute;
+            top: 17vh;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            .gallery {
+                display: none;
+
+                // Styling all gallery cells
+                .gallery-cell {
+                    // Calculate 16:9 aspect ratio
+                    width: 60%;
+                    height: 35vw;
+                    margin-right: 90px;
+                    // background: #8C8;
+                    counter-increment: gallery-cell;
+                    border: 5px white solid;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+
+                    // Styling all gallery images
+                    .gallery-img {
+                        position: absolute;
+                        width: auto;
+                        height: 100%;
+                        // object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For Tablet screens (over 480px and under 800px) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+
+    /* PROJECTS PAGE */
+    #projects-page {
+
+        // styling all project boxes
+        .project-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .project-thumbnail {
+                width: 80vw;
+                height: 42vw;
+                margin-bottom: 10px;
+            }
+
+            .project-info {
+                margin-left: 0;
+            }
+        }
+
+        // background dim
+        #bg-dim {
+
+            // My AssetsGallery container
+            #assets-gallery-container {
+                position: absolute;
+                top: 35vh;
+
+                .gallery {
+
+                    // Styling all gallery cells
+                    .gallery-cell {
+                        // Calculate 16:9 aspect ratio
+                        width: 90%;
+                        height: 50vw;
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+
+    /* PROJECTS PAGE */
+    #projects-page {
+
+        // styling all project boxes
+        .project-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .project-thumbnail {
+                width: 90vw;
+                height: 50vw;
+                margin-bottom: 10px;
+            }
+
+            .project-info {
+                margin-left: 0;
+            }
+        }
+
+        // background dim
+        #bg-dim {
+
+            // My AssetsGallery container
+            #assets-gallery-container {
+                position: absolute;
+                top: 35vh;
+
+                .gallery {
+
+                    // Styling all gallery cells
+                    .gallery-cell {
+                        // Calculate 16:9 aspect ratio
+                        width: 90%;
+                        height: 50vw;
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

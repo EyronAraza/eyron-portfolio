@@ -1,0 +1,92 @@
+@import 'variables';
+
+/* ABOUT ME PAGE */
+#about-me-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    // border: 1px solid blue;
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 25px;
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #about-text-container {
+        margin-top: 20px;
+        width: 75%;
+    }
+
+    // Styling h1 span
+    #h1-myname {
+        color: $primary-purple;
+    }
+
+    // SKILLS CONTAINER
+    #skills-container {
+        margin-top: 1rem;
+        margin-bottom: 50px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        // border: 2px solid red;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        // Style all skills boxes
+        .skills-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: auto;
+            padding: 15px 0;
+            background-color: $purple-dark;
+            border-radius: 10px;
+        }
+
+        img {
+            width: auto;
+            height: 75%;
+        }
+
+        p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+    #about-me-page {
+        #about-text-container {
+            width: 90%;
+        }
+
+        // SKILLS CONTAINER
+        #skills-container {
+            gap: 1rem;
+
+            // Style all skills boxes
+            .skills-box {
+                width: 160px;
+                height: auto;
+            }
+        }
+    }
+}

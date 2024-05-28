@@ -1,0 +1,129 @@
+/* PROJECTS PAGE */
+#projects-page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+  margin-bottom: 50px; }
+  #projects-page .project-box {
+    display: flex;
+    width: 95%;
+    height: auto; }
+    #projects-page .project-box .project-thumbnail {
+      width: 42vw;
+      height: 22vw;
+      border: 5px solid #9575DE;
+      border-radius: 10px;
+      overflow: hidden; }
+      #projects-page .project-box .project-thumbnail .thumbnail-img {
+        width: 100%;
+        height: 100%; }
+    #projects-page .project-box .project-info {
+      margin-left: 20px;
+      flex: 3; }
+      #projects-page .project-box .project-info h1 {
+        font-size: 2rem;
+        line-height: 40px; }
+      #projects-page .project-box .project-info hr {
+        margin: 5px 0; }
+      #projects-page .project-box .project-info p {
+        font-size: 1.1rem; }
+      #projects-page .project-box .project-info a,
+      #projects-page .project-box .project-info i {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #9575DE;
+        text-decoration: none;
+        margin-right: 3px; }
+        #projects-page .project-box .project-info a:hover,
+        #projects-page .project-box .project-info i:hover {
+          color: #b59ee8; }
+          #projects-page .project-box .project-info a:hover i,
+          #projects-page .project-box .project-info i:hover i {
+            color: #b59ee8; }
+  #projects-page #bg-dim {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+    #projects-page #bg-dim #btn-close {
+      position: absolute;
+      z-index: 2;
+      top: 20px;
+      right: 30px;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer; }
+    #projects-page #bg-dim #assets-gallery-container {
+      position: absolute;
+      top: 17vh;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      #projects-page #bg-dim #assets-gallery-container .gallery {
+        display: none; }
+        #projects-page #bg-dim #assets-gallery-container .gallery .gallery-cell {
+          width: 60%;
+          height: 35vw;
+          margin-right: 90px;
+          counter-increment: gallery-cell;
+          border: 5px white solid;
+          border-radius: 15px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black; }
+          #projects-page #bg-dim #assets-gallery-container .gallery .gallery-cell .gallery-img {
+            position: absolute;
+            width: auto;
+            height: 100%; }
+
+/* For Tablet screens (over 480px and under 800px) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  /* PROJECTS PAGE */
+  #projects-page .project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #projects-page .project-box .project-thumbnail {
+      width: 80vw;
+      height: 42vw;
+      margin-bottom: 10px; }
+    #projects-page .project-box .project-info {
+      margin-left: 0; }
+  #projects-page #bg-dim #assets-gallery-container {
+    position: absolute;
+    top: 35vh; }
+    #projects-page #bg-dim #assets-gallery-container .gallery .gallery-cell {
+      width: 90%;
+      height: 50vw;
+      margin-right: 50px; } }
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+  /* PROJECTS PAGE */
+  #projects-page .project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #projects-page .project-box .project-thumbnail {
+      width: 90vw;
+      height: 50vw;
+      margin-bottom: 10px; }
+    #projects-page .project-box .project-info {
+      margin-left: 0; }
+  #projects-page #bg-dim #assets-gallery-container {
+    position: absolute;
+    top: 35vh; }
+    #projects-page #bg-dim #assets-gallery-container .gallery .gallery-cell {
+      width: 90%;
+      height: 50vw;
+      margin-right: 50px; } }
+
+/*# sourceMappingURL=projects-main.css.map */

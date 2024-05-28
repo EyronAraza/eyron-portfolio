@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #9575DE black; }
+
+body {
+  background-color: #221F26; }
+
+/* MAIN CONTAINER */
+main {
+  width: 100%;
+  height: auto; }
+
+/* For Tablet screens (over 480px and under 800px) */
+/* For Phone screens (under 480px) */
+/* NAVBAR */
+#nav-bar {
+  width: 100%;
+  height: 15vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  gap: 5rem; }
+  #nav-bar #radio-container {
+    display: none; }
+  #nav-bar .nav-button {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 1.4rem;
+    width: 130px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s; }
+    #nav-bar .nav-button:hover {
+      background-color: #9575DE;
+      color: #2B2730;
+      border: 2px solid #9575DE; }
+    #nav-bar .nav-button.active {
+      background-color: #9575DE;
+      color: #2B2730;
+      border: 2px solid #9575DE; }
+
+/* For Tablet screens (over 480px and under 800px) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  #nav-bar {
+    height: 13vh; } }
+/* For Phone screens (under 480px) */
+@media only screen and (max-width: 480px) {
+  #nav-bar {
+    height: 13vh;
+    gap: 1.75rem; }
+    #nav-bar .nav-button {
+      font-size: 1.3rem;
+      width: 110px; } }
+
+/*# sourceMappingURL=navbar.css.map */
